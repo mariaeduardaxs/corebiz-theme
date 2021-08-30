@@ -73,7 +73,7 @@
           "querySchema": {
               "hideUnavailableItems": true,
               "maxItemsPerPage": 8,
-              "queryField": "BlackFriday, funil, Creative design, Produção",
+              "queryField": "BlackFriday, funil, 13, 14",
               "mapField": "ft",
               "skusFilter": "ALL_AVAILABLE"
           }
