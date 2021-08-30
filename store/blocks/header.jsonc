@@ -1,0 +1,142 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#desktop-header"
+    ]
+  },
+  "flex-layout.row#desktop-header": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "search-bar#desktop": {
+    "props": {
+      "autoFocus": true,
+      "maxWidth": "530px"          
+    }
+  },
+  
+  "login#desktop": {
+    "props": {
+      "showIconProfile": true,
+      "blockClass": "login-desktop"
+    }
+  },
+  
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  
+  "header-layout.mobile": {
+    "children": [
+      "responsive-layout.mobile#mobile-header"
+    ]
+  },
+  "responsive-layout.mobile#mobile-header": {
+    "children": [ 
+      "flex-layout.row#mobile-header",
+      "flex-layout.row#search-mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "mobileheader",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  
+  "flex-layout.row#mobile-header": {
+    "props": {
+      "blockClass": "mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "locale-switcher",
+      "login",
+      "login#mobile",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.row#search-mobile": {
+    "props": {
+      "blockClass": "header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "search-bar#mobile"
+    ]
+  },
+  
+  "search-bar#mobile": {
+    "props": {
+      "autoFocus": true,
+      "maxWidth": "650px"          
+    }
+  },
+  
+  "login#mobile": {
+    "props": {
+      "showIconProfile": true,
+      "blockClass": "login-mobile"
+    }
+  },
+  
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://www.corebiz.ag/wp-content/uploads/2020/06/logo-corebiz-global.svg",
+      "width": "80"
+    }
+  },
+  
+  "drawer": {
+    "children": []
+  }
+ }
+ 
+
