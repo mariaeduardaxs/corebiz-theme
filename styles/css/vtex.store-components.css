@@ -40,3 +40,15 @@
 .productBrand {
     color: #cccccc;
 }
+
+/* FOOTER */
+
+.imageElement--image-footer {
+    /* IMAGEM DESKTOP DAS LUMINARIAS */
+    padding-left: 0.5%;
+}
+
+.imageElement--image-footer-mobile {
+    /* IMAGEM MOBILE DAS LUMINARIAS */
+    padding-left: 5%;
+}

@@ -5,3 +5,31 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+/* ===== FOOTER =====*/
+
+/* === DESKTOP === */
+
+.heading--texto-footer {
+    /* TEXTO COM OS NOMES DOS PAISES */
+    color: #fff;
+}
+
+.paragraph--texto-footer {
+    /* TEXTO COM OS ENDEREÇOS DOS ESCRITORIOS */
+    color: #fff;
+    font-family: "Circular Std Medium", sans-serif;
+    font-size: 0.7rem;
+}
+
+.heading--texto-seguir {
+    /* TEXTO SIGA A GENTE */
+    color: #fff;
+}
+
+.paragraph--texto-direitos {
+    /* TEXTO DIREITOS RESERVADOS*/
+    width: 100%;
+    color: #fff;
+    font-size: 0.9rem;
+}
