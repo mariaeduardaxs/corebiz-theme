@@ -1,182 +1,164 @@
 //organizar os conteúdos da home: menu e produtos
-
+ 
 {
-  "store.home": { 
-    "blocks": [
-      "flex-layout.row#categorias"
-    ]
-  },
-
-  // Criar o menu em tabs
-
-  "flex-layout.row#categorias": {
-    "props": {
-      "blockClass": "menuCategorias"
-    },
-    "children": [
-      "tab-layout#categorias"
-    ]
-  },
-  "flex-layout.row#principal": {
-    "props": {
-      "blockClass": "banner"
-    },
-    "children": [
-      "slider-layout#principal"
-    ]
-  },
-
-  // Fazer filtro de busca de produtos
-
-  "flex-layout.row#": {
-    "children": [
-      "search-result-layout.customQuery#Promoção"
-    ],
-    "props": {
-      "blockClass": "corpo"
-    }
-  },
-  "search-result-layout.customQuery#Promoção": {
-    "props": {
-        "querySchema": {
-            "hideUnavailableItems": true,
-            "maxItemsPerPage": 8,
-            "queryField": "camisetas",
-            "mapField": "ft",
-            "skusFilter": "ALL_AVAILABLE"
-        }
-    },
-    "blocks": [
-      "search-result-layout.desktop#home"
-    ]
-  },
-  "flex-layout.row#Corinthians": {
-    "children": [
-      "search-result-layout.customQuery#Corinthians"
-    ],
-    "props": {
-      "blockClass": "corpo"
-    }
-  },
-  "search-result-layout.customQuery#Corinthians": {
-    "props": {
-        "querySchema": {
-            "hideUnavailableItems": true,
-            "maxItemsPerPage": 8,
-            "queryField": "Corinthians",
-            "mapField": "ft",
-            "skusFilter": "ALL_AVAILABLE"
-        }
-    },
-    "blocks": [
-      "search-result-layout.desktop#home"
-    ]
-  },
-  "flex-layout.row#Palmeiras": {
-    "children": [
-      "search-result-layout.customQuery#Palmeiras"
-    ],
-    "props": {
-      "blockClass": "corpo"
-    }
-  },
-  "search-result-layout.customQuery#Palmeiras": {
-    "props": {
-        "querySchema": {
-            "hideUnavailableItems": true,
-            "maxItemsPerPage": 8,
-            "queryField": "Palmeiras",
-            "mapField": "ft",
-            "skusFilter": "ALL_AVAILABLE"
-        }
-    },
-    "blocks": [
-      "search-result-layout.desktop#home"
-    ]
-  },
-
-  "search-result-layout.desktop#home": {
-    "children": [
-      "flex-layout.row#buscaHome"
-    ]
-  },
-  "flex-layout.row#buscaHome": {
-    "children": [
-      "flex-layout.col#search"
-    ]
-  },
-
-  // Fazer o menu com categorias e resgatar o conteúdo de cada categoria
-
-  "tab-layout#categorias": {
-    "children": [
-      "tab-list#categorias",
-      "tab-content#categorias"
-    ],
-    "props": {
-      "blockClass": "categorias",
-      "defaultActiveTabId": "Promoção"
-    }
-  },
-  "tab-list#categorias": {
-    "children": [
-      "tab-list.item#Promoção",
-      "tab-list.item#Corinthians",
-      "tab-list.item#Palmeiras"
+    "store.home": {
+      "blocks": [
+        "flex-layout.row#categorias"
       ]
-  },
-  "tab-content#categorias": {
-    "children": [
-      "tab-content.item#Promoção",
-      "tab-content.item#Corinthians",
-      "tab-content.item#Palmeiras"
+    },
+     // Criar o menu em tabs
+     "flex-layout.row#categorias": {
+      "props": {
+        "blockClass": "menuCategorias"
+      },
+      "children": [
+        "tab-layout#categorias"
       ]
-  },
-  "tab-list.item#Promoção": {
-    "props": {
-      "tabId": "Promoção",
-      "label": "Promoção",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#Corinthians": {
-    "props": {
-      "tabId": "Corinthians",
-      "label": "Corinthians"
-    }
-  },
-  "tab-list.item#Palmeiras": {
-    "props": {
-      "tabId": "Palmeiras",
-      "label": "Palmeiras"
-    }
-  },
-
-  "tab-content.item#Promoção": {
-    "children": [
-      "flex-layout.row#principal",
-      "flex-layout.row#Promoção1"
-    ],
-    "props": {
-      "tabId": "Promoção"
-    }
-  },
-  "tab-content.item#Corinthians": {
-    "children": [
-      "flex-layout.row#principal",
-      "flex-layout.row#Corinthians"
-    ],
-    "props": {
-      "tabId": "Corinthians"
-    }
-  },
-  "tab-content.item#Palmeiras": {
-    "children": [
-      "flex-layout.row#principal",
-      "flex-layout.row#Palmeiras"
-    ],
-    "props": {
-      "tabId": "Palmeiras"
+    },
+     // Fazer filtro de busca de produtos
+     "flex-layout.row#Tecnologia": {
+      "children": [
+        "search-result-layout.customQuery#Tecnologia"
+      ],
+      "props": {
+        "blockClass": "corpo"
+      }
+    },
+    "search-result-layout.customQuery#Tecnologia": {
+      "props": {
+          "querySchema": {
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "plataforma e-commerce, APIs, sistema",
+              "mapField": "ft",
+              "skusFilter": "ALL_AVAILABLE"
+          }
+      },
+      "blocks": [
+        "search-result-layout.desktop#home"
+      ]
+    },
+    "flex-layout.row#Experiência": {
+      "children": [
+        "search-result-layout.customQuery#Experiência"
+      ],
+      "props": {
+        "blockClass": "corpo"
+      }
+    },
+    "search-result-layout.customQuery#Experiência": {
+      "props": {
+          "querySchema": {
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "performance do e-commerce, Redesign, Experiência",
+              "mapField": "ft",
+              "skusFilter": "ALL_AVAILABLE"
+          }
+      },
+      "blocks": [
+        "search-result-layout.desktop#home"
+      ]
+    },
+    "flex-layout.row#Marketing": {
+      "children": [
+        "search-result-layout.customQuery#Marketing"
+      ],
+      "props": {
+        "blockClass": "corpo"
+      }
+    },
+    "search-result-layout.customQuery#Marketing": {
+      "props": {
+          "querySchema": {
+              "hideUnavailableItems": true,
+              "maxItemsPerPage": 8,
+              "queryField": "BlackFriday, funil, Creative, Produção",
+              "mapField": "ft",
+              "skusFilter": "ALL_AVAILABLE"
+          }
+      },
+      "blocks": [
+        "search-result-layout.desktop#home"
+      ]
+    },
+     "search-result-layout.desktop#home": {
+      "children": [
+        "flex-layout.row#buscaHome"
+      ]
+    },
+    "flex-layout.row#buscaHome": {
+      "children": [
+        "flex-layout.col#search"
+      ]
+    },
+     // Fazer o menu com categorias e resgatar o conteúdo de cada categoria
+     "tab-layout#categorias": {
+      "children": [
+        "tab-list#categorias",
+        "tab-content#categorias"
+      ],
+      "props": {
+        "blockClass": "categorias",
+        "defaultActiveTabId": "Tecnologia"
+      }
+    },
+    "tab-list#categorias": {
+      "children": [
+        "tab-list.item#Tecnologia",
+        "tab-list.item#Experiência",
+        "tab-list.item#Marketing"
+        ]
+    },
+    "tab-content#categorias": {
+      "children": [
+        "tab-content.item#Tecnologia",
+        "tab-content.item#Experiência",
+        "tab-content.item#Marketing"
+        ]
+    },
+    "tab-list.item#Tecnologia": {
+      "props": {
+        "tabId": "Tecnologia",
+        "label": "Tecnologia",
+        "defaultActiveTab": true
+      }
+    },
+    "tab-list.item#Experiência": {
+      "props": {
+        "tabId": "Experiência",
+        "label": "Experiência"
+      }
+    },
+    "tab-list.item#Marketing": {
+      "props": {
+        "tabId": "Marketing",
+        "label": "Marketing"
+      }
+    },
+     "tab-content.item#Tecnologia": {
+      "children": [
+        "flex-layout.row#Tecnologia"
+      ],
+      "props": {
+        "tabId": "Tecnologia"
+      }
+    },
+    "tab-content.item#Experiência": {
+      "children": [
+        "flex-layout.row#Experiência"
+      ],
+      "props": {
+        "tabId": "Experiência"
+      }
+    },
+    "tab-content.item#Marketing": {
+      "children": [
+        "flex-layout.row#Marketing"
+      ],
+      "props": {
+        "tabId": "Marketing"
+      }
     }
   }
-}
+ 

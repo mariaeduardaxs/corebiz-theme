@@ -1,0 +1,40 @@
+{   
+    "product-summary.shelf#vitrine": {
+        "children": [
+            "product-summary-name#vitrine",
+            "product-summary-image#vitrine",            
+            "product-summary-space",
+            "product-summary-price#vitrine",
+            "add-to-cart-button#vitrine"
+        ],
+        "props": {
+            "clearLink": "none",
+            "blockClass": "vitrine"
+        }
+    },
+    "product-summary-name#vitrine": {
+        "props": {
+            "blockClass": "vitrine",
+            "tag": "div"
+        }
+    },
+    "product-summary-image#vitrine": {
+        "props": {
+            "blockClass": "vitrine"
+        } 
+    },
+    "product-summary-price#vitrine": {
+        "props": {
+            "blockClass": "vitrine",
+            "labelListPrice": "",
+            "labelSellingPrice": "",
+            "showLabels": true
+        }
+    },
+    "add-to-cart-button#vitrine": {
+        "props": {
+            "onClickBehavior": "go-to-product-page",
+            "text": "Ver Detalhes"
+        }
+    }
+}
